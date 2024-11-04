@@ -9,7 +9,7 @@
     "lint": "next lint",
     "prisma:generate": "prisma generate",
     "migrate": "prisma migrate deploy",
-    "build:production": "npm run migrate && npx prisma generate && npm run build"
+    "build:production": "npx prisma db push && npx prisma generate && npm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
